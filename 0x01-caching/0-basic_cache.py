@@ -9,9 +9,10 @@ class BasicCache(BaseCaching):
     def __init__(self):
         """intializer"""
         super().__init__()
+
     def put(self, key, item):
         """assigning values and keys to dictionary"""
-        if key == None or item == None:
+        if key is None or item is None:
             pass
         else:
             self.cache_data[key] = item
